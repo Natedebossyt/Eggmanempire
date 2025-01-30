@@ -70,16 +70,9 @@ class BrowserFrame(wx.Frame):
         self.Show()
 
     def start_file_server(self, event):
-        # Ask the user for a specific directory to share
-         dlg = wx.DirDialog(self, "Select a directory to share", style=wx.DD_DEFAULT_STYLE)
-        
-         if dlg.ShowModal() == wx.ID_OK:
-            directory_to_share = dlg.GetPath()
-            self.file_server_thread = FileServerThread(directory_to_share)
-            self.file_server_thread.start()
-            wx.MessageBox(f"File server started! Access it at http://localhost:8080", "Server Info", wx.OK)
+            wx.MessageBox(f"File server started! Access it at https://github.com/Natedebossyt/Eggmanempire", "Server Info", wx.OK)
+            self.browser.LoadURL("https://github.com/Natedebossyt/Eggmanempire")
 
-         dlg.Destroy()
 
         
 
