@@ -3,7 +3,7 @@ import openai
 from PIL import Image, ImageTk
 
 # Set up OpenAI API Key (You need to replace this with your actual API key)
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Function to get AI response from OpenAI GPT-3.5 or GPT-4 using the Chat API
 def get_ai_response(prompt):
