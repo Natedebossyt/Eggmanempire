@@ -83,7 +83,7 @@ print(privacy_policy_text)
 
 input("agree? y/n")
 
-if input = n or N
+if input = n
 quit()
 
 else import Net_Test_6
