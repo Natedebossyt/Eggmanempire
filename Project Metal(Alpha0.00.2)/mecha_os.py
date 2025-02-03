@@ -47,7 +47,7 @@ class Window(Frame):
 
         stickynotebutton = Button(self, text="sticky note", command=self.clickstickynoteButton)
 
-        mechadefensive = Button (self, text="defensive mode", command=self.clickdefensiveButton)
+        metaldefensive = Button (self, text="defensive mode", command=self.clickdefensiveButton)
 
         exitbutton = Button(self, text="power off", command=self.clickexitButton)
 
@@ -74,7 +74,7 @@ class Window(Frame):
 
         stickynotebutton.place(x=600, y=600)
 
-        mechadefensive.place(x=700, y=600)
+        metaldefensive.place(x=700, y=600)
 
         versionbutton.place(x=1100, y=700)
 
