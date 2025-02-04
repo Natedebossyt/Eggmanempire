@@ -12,7 +12,7 @@ def get_ai_response(prompt):
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",  # You can use "gpt-3.5-turbo" or "gpt-4" here
             messages=[
-                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "system", "content": "You are a helpful, kind assistant for the eggman empire. You are named "Metal Sonic"},
                 {"role": "user", "content": prompt}
             ]
         )
